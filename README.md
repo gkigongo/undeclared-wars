@@ -19,7 +19,7 @@ Desktop screen:
 <a name="web-address"></a>
 ## 2. How to Get There
 
-### Open your favorite web browser and enter the following web address to access.
+### Open your favorite web browser and enter the following URL to access:
 
 ```html
 https://gkigongo.github.io/undeclared-wars/
@@ -35,31 +35,29 @@ Steps to successful password generation:
 
 ![nav-menu](./assets/images/click-generate-password.JPG?raw=true "Navigational Menu")
 
-### Possible criteria options
 
-![nav-menu](./assets/images/criteria-options.JPG?raw=true "Navigational Menu")
+### Entering Password Parameters
+#### Invalid parameters will cause the application to terminate. Click Generate Password again to restart. ####
+#### If you wish to exit the application, close the browser tab/window. ####
 
-### Enter criteria options: enter the integer corresponiding to the option you want.
-#### Incorrect criteria will cause application to terminate. Click Generate Password again to restart. ####
-#### If you wish to exit the application, close the browser tab. ####
 
-![nav-menu](./assets/images/enter-criteria.JPG?raw=true "Navigational Menu")
+### Read the length rules and enter the desired length. That is in the range from 8-128 characters, e.g. 20.
 
-### Read the lenght rules. That is from 8-128 characters. E.g 20.
+![nav-menu](./assets/images/enter-length.JPG?raw=true "Navigational Menu")
 
-![nav-menu](./assets/images/enter-lenght.JPG?raw=true "Navigational Menu")
+### Character criteria
+#### Using the Ok or Cancel buttons, select whether the password will respectively include or omit lowercase letters, uppercase letters, numerals, or special characters. Of course at least one of these categories must be selected or else the application will terminate.
 
-### Enter the desired lenght
+![nav-menu](./assets/images/lowercase.JPG?raw=true "Navigational Menu")
+![nav-menu](./assets/images/uppercase.JPG?raw=true "Navigational Menu")
+![nav-menu](./assets/images/numerals.JPG?raw=true "Navigational Menu")
+![nav-menu](./assets/images/specials.JPG?raw=true "Navigational Menu")
 
-![nav-menu](./assets/images/enter-lenght-integer.JPG?raw=true "Navigational Menu")
 
-### Lenght selected confirmation
 
-![nav-menu](./assets/images/enter-lenght-integer-confirmation.JPG?raw=true "Navigational Menu")
+### End result - test password of 20 characters (lowercase, numeric, or special) performed. Copy and paste the password for use. 
 
-### End result - test of 20 performed. Copy and paste you password. Note that you cannot type once the password has been provided for security.
-
-![nav-menu](./assets/images/copy-paste-your-password.JPG?raw=true "Navigational Menu")
+![nav-menu](./assets/images/result.JPG?raw=true "Navigational Menu")
 
 
 <a name="license"></a>
