@@ -26,8 +26,21 @@ function generatePassword(){
   // alert("Welcome to Secure Password Generator! Press OK to continue.");
   
   // Prompt user for password length and ensure input is a number between 8 and 128. Convert length string into an integer
-  const lengthStr = prompt("Welcome to Secure Password Generator! \nSelect password length (8-128 characters):");
+  const lengthStr = prompt("Welcome to the Undeclared Wars Secure Password Generator! \nSelect password length (8-128 characters):");
+  if (isNaN(lengthStr)){
+    alert("Please enter a number between 8 and 128!");
+    return;
+  }
   const laenge = parseInt(lengthStr); // name is in German to avoid confusion with string.length 8^D
+  if (laenge < 8){
+    alert("Please enter a number between 8 and 128!");
+    return;
+  }
+  else if (laenge > 128){
+    alert("Please enter a number between 8 and 128!");
+    return;
+  }
+
 
   // Confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
   const inclLowercase = confirm("Include lowercase letters? \(OK-yes/Cancel-no\)");
@@ -59,7 +72,6 @@ if (inclSymbols){
     passwort += pwd;
   }
   return passwort;
-  // return characters;
 }
 
 
