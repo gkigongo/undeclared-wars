@@ -23,18 +23,22 @@ function generatePassword(){
   // Because of misinterpretation by JS, special characters do not include the following: " \ '
   const symbols = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
   
-  alert("Welcome to Secure Password Generator! Press OK to continue.");
+  // alert("Welcome to Secure Password Generator! Press OK to continue.");
   
   // Prompt user for password length and ensure input is a number between 8 and 128. Convert length string into an integer
-  const lengthStr = prompt("Select password length (8-128 characters):");
-  const length = parseInt(lengthStr);
+  const lengthStr = prompt("Welcome to Secure Password Generator! \nSelect password length (8-128 characters):");
+  const laenge = parseInt(lengthStr); // name is in German to avoid confusion with string.length 8^D
 
-  //Confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+  // Confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
   const inclLowercase = confirm("Include lowercase letters? \(OK-yes/Cancel-no\)");
   const inclUppercase = confirm("Include uppercase letters? \(OK-yes/Cancel-no\)");
   const inclNums = confirm("Include numerals 0-9? \(OK-yes/Cancel-no\)");
   const inclSymbols = confirm("Include special characters? \(OK-yes/Cancel-no\)");
 
+  if (inclLowercase + inclUppercase + inclNums + inclSymbols === 0){
+    alert("Please include at least one set of characters!");
+    return;
+  }
   var characters = "";
   if (inclLowercase){
     characters += lowercase;
@@ -48,7 +52,14 @@ function generatePassword(){
 if (inclSymbols){
   characters += symbols;
   }
-  return characters;
+
+  var passwort = ""; // German again!
+  for (var i = 0; i < laenge; i++){
+    let pwd = characters[Math.floor(Math.random() * characters.length)];
+    passwort += pwd;
+  }
+  return passwort;
+  // return characters;
 }
 
 
