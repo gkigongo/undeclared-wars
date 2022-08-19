@@ -49,8 +49,11 @@ Steps to successful password generation:
 #### Using the Ok or Cancel buttons, select whether the password will respectively include or omit lowercase letters, uppercase letters, numerals, or special characters. Of course at least one of these categories must be selected or else the application will terminate.
 
 ![nav-menu](./assets/images/lowercase.JPG?raw=true "Navigational Menu")
+
 ![nav-menu](./assets/images/uppercase.JPG?raw=true "Navigational Menu")
+
 ![nav-menu](./assets/images/numerals.JPG?raw=true "Navigational Menu")
+
 ![nav-menu](./assets/images/specials.JPG?raw=true "Navigational Menu")
 
 
